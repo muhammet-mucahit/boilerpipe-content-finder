@@ -1,0 +1,5 @@
+JPype1
+chardet
+fastapi[all]
+hypercorn
+beautifulsoup4
