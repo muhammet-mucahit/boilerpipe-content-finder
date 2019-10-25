@@ -31,14 +31,7 @@ class BoilerpipeResult():
         self.wordCount = wordCount
 
 def count_word_content(extractor):
-    textBlocks = extractor.getTextBlocks()
-    
-    wordCount = 0
-    for textBlock in textBlocks:
-        if textBlock.isContent():
-            wordCount += textBlock.getNumWords()
-
-    return wordCount
+    return len(extractor.getText().split())
 
 def findInPageWithSelector(extractor, selector):
     item = BeautifulSoup(extractor.data,"html.parser").find(selector)
@@ -55,7 +48,7 @@ def findMetaInfos(extractor):
 
 def get_boilerpipe(url):
     extractor = Extractor(extractor='ArticleExtractor', url=url)
-    title = extractor.getTitle()
+    title = findInPageWithSelector(extractor, "title")
     h1 = findInPageWithSelector(extractor, "h1")
     description = findMetaInfos(extractor)
     content = extractor.getText()
