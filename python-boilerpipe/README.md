@@ -21,10 +21,10 @@ Checkout the code:
 
 **virtualenv**
 ```bash
-	virtualenv env
-	source env/bin/activate
-	pip install -r requirements.txt
-	python setup.py install
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+python setup.py install
 ```
 
 ## Running
