@@ -19,7 +19,7 @@ Checkout the code:
 	git clone https://github.com/muhammet-mucahit/boilerpipe-content-finder
 	cd boilerpipe-content-finder/python-boilerpipe
 
-**virtualenv**
+Virtual environment:
 	virtualenv env
 	source env/bin/activate
     pip install -r requirements.txt
