@@ -20,10 +20,10 @@ Checkout the code:
 	cd boilerpipe-content-finder/python-boilerpipe
 
 **virtualenv**
-```code
+```bash
 	virtualenv env
 	source env/bin/activate
-    pip install -r requirements.txt
+	pip install -r requirements.txt
 	python setup.py install
 ```
 
